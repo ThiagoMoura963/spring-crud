@@ -41,8 +41,17 @@ public class Order implements Serializable {
         return id;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+
     public Instant getMoment() {
         return moment;
+    }
+
+    public void setMoment(Instant moment) {
+        this.moment = moment;
     }
 
     public OrderStatus getOrderStatus() {
@@ -51,14 +60,6 @@ public class Order implements Serializable {
 
     public User getClient() {
         return client;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public void setMoment(Instant moment) {
-        this.moment = moment;
     }
 
     public void setOrderStatus(OrderStatus orderStatus) {
